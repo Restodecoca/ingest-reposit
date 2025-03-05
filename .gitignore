@@ -3,3 +3,5 @@ storage
 .env
 output
 static/
+.frontend/package-lock.json
+poetry.lock

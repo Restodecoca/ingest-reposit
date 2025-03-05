@@ -3,7 +3,7 @@ import logging
 from typing import Dict
 from llama_parse import LlamaParse
 from pydantic import BaseModel
-
+from llama_index.readers.file import PDFReader
 from app.config import DATA_DIR
 
 logger = logging.getLogger(__name__)
@@ -39,7 +39,7 @@ def get_file_documents(config: FileLoaderConfig):
     from llama_index.core.readers import SimpleDirectoryReader
 
     try:
-        file_extractor = None
+        file_extractor = {".pdf": PDFReader(return_full_document = True)}
         if config.use_llama_parse:
             # LlamaParse is async first,
             # so we need to use nest_asyncio to run it in sync mode

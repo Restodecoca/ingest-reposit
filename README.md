@@ -1,5 +1,32 @@
 This is a [LlamaIndex](https://www.llamaindex.ai/) project using [FastAPI](https://fastapi.tiangolo.com/) bootstrapped with [`create-llama`](https://github.com/run-llama/LlamaIndexTS/tree/main/packages/create-llama).
 
+## Environment setup
+
+Install python virtualenv and activate:
+*Linux*
+```
+pip install virtualenv
+virtualenv venv
+source venv/bin/activate
+```
+*Windows*
+```
+pip install virtualenv
+python -m virtualenv venv
+.\venv\Scripts\activate
+```
+
+Install poetry:
+
+```
+pip install poetry
+```
+
+Copy environment variables file:
+```
+cp .env.example .env
+```
+
 ## Getting Started
 
 First, setup the environment with poetry:
