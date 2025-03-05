@@ -5,3 +5,4 @@ output
 static/
 .frontend/package-lock.json
 poetry.lock
+node_modules/
